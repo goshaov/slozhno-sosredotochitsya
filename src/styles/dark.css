@@ -4,9 +4,126 @@
   переключая тему
 */
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+.page.theme_dark {
+  --bck-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --decor-color: #ff0070;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --font: "IBM Plex Mono";
+  --paragraph-title-color: #000028;
+}
+
+.page.theme_dark .decorated-zone--item::before {
+  content: "rec";
+  position: absolute;
+  inset-inline-end: 28px;
+  inset-block-start: 0;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-align: center;
+  font-family: var(--font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.page.theme_dark .decorated-zone::before,
+.page.theme_dark .decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.page.theme_dark .decorated-zone::before {
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page.theme_dark .footer.decorated-zone::before {
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+  background-image: none;
+}
+
+.page.theme_dark .decorated-zone::after {
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .page {
+    --bck-image: url(../images/cover-image-dark.png);
+    --accent-color: #ff0070;
+    --decor-color: #ff0070;
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --font: "IBM Plex Mono";
+    --paragraph-title-color: #000028;
+  }
+
+  .decorated-zone--item::before {
+    content: "rec";
+    position: absolute;
+    inset-inline-end: 28px;
+    inset-block-start: 0;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .decorated-zone::before,
+  .decorated-zone::after {
+    content: "";
+    position: absolute;
+    inline-size: 25px;
+    block-size: 25px;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    border-top: 1px solid var(--decor-color);
+    border-right: 1px solid var(--decor-color);
+    background-image: url(../images/ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer.decorated-zone::before {
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    border-top: 1px solid var(--decor-color);
+    border-right: 1px solid var(--decor-color);
+    background-image: none;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    border-bottom: 1px solid var(--decor-color);
+    border-left: 1px solid var(--decor-color);
+  }
 }
