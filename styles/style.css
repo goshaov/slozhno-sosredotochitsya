@@ -46,12 +46,12 @@
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--decor-color);
-  padding: 0 13px;
+  padding: 0 10px;
 }
 
 .header__theme-menu-button:hover {
   outline: 1px solid rgba(var(--hover-color), 0.4);
-  padding: 0 13px;
+  padding: 0 10px;
 }
 
 .header__theme-menu-button:focus,
