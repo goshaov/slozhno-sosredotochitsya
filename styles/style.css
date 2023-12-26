@@ -9,7 +9,7 @@
 
 .header {
   display: grid;
-  height: 100vh;
+  /* height: 100vh; */
   min-block-size: 648px;
   grid-template-rows: 0fr 1fr auto 1fr;
   align-items: center;
