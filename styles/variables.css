@@ -1,4 +1,6 @@
-:root {
+.page {
+  --bck-image: url(../images/cover-image-dark.png);
+  --bck-color: #000028;
   --accent-color: #ff0070;
   --main-title-color: #ff0070;
   --decor-color: #ff0070;
