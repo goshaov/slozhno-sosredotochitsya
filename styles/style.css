@@ -41,6 +41,7 @@
   background-color: transparent;
   border-color: transparent;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -92,7 +93,7 @@
 
 .article__main-title {
   display: grid;
-  color: var(--accent-color);
+  color: var(--main-title-color);
   font-family: var(--font);
   font-size: 18px;
   font-style: normal;
@@ -165,8 +166,7 @@
 }
 
 .link-decor:hover {
-  text-decoration-line: underline;
-  text-decoration-color: var(--text-color);
+  border-block-end: 1px solid var(--text-color);
 }
 
 .link-decor:focus,

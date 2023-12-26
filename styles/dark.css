@@ -12,6 +12,7 @@
 .page.theme_dark {
   --bck-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
+  --main-title-color: #ff0070;
   --decor-color: #ff0070;
   --hover-color: 255, 0, 112;
   --text-color: #f1b2ce;
@@ -73,7 +74,9 @@
   .page {
     --bck-image: url(../images/cover-image-dark.png);
     --accent-color: #ff0070;
+    --main-title-color: #ff0070;
     --decor-color: #ff0070;
+    --hover-color: 255, 0, 112;
     --text-color: #f1b2ce;
     --title-color: #db00ff;
     --font: "IBM Plex Mono";
