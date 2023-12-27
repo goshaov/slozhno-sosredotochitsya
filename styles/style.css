@@ -9,7 +9,7 @@
 
 .header {
   display: grid;
-  /* block-size: 100vh; */
+  block-size: 100vh;
   min-block-size: 648px;
   grid-template-rows: 0fr 1fr auto 1fr;
   align-items: center;
@@ -147,7 +147,7 @@
 }
 
 .footer {
-  /* block-size: 100vh; */
+  block-size: 100vh;
   position: relative;
   display: flex;
   width: 100%;
