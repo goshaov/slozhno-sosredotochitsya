@@ -1,6 +1,6 @@
 .page {
   background-image: var(--bck-image);
-  /* background-color: var(--bck-color); */
+  background-color: var(--bck-color);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -9,7 +9,7 @@
 
 .header {
   display: grid;
-  block-size: 100vh;
+  /* block-size: 100vh; */
   min-block-size: 648px;
   grid-template-rows: 0fr 1fr auto 1fr;
   align-items: center;
@@ -147,7 +147,7 @@
 }
 
 .footer {
-  block-size: 100vh;
+  /* block-size: 100vh; */
   position: relative;
   display: flex;
   width: 100%;
@@ -388,7 +388,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
-/* 
+
 .page.theme_dark .decorated-zone--item::before {
   content: "rec";
   position: absolute;
@@ -569,4 +569,4 @@
     border-bottom: 1px solid var(--decor-color);
     border-left: 1px solid var(--decor-color);
   }
-} */
+} 
