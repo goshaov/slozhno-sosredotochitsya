@@ -1,6 +1,6 @@
 .page {
+  background-color: var(--bck-color);
   background-image: var(--bck-image);
-  /* background-color: var(--bck-color); */
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
